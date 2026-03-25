@@ -8,24 +8,20 @@ public:
     
         for(int i=0; i<nums.size(); i++){
             if(nums[i]>=0){
-                posnums.push_back(nums[i]);
-            }
+                posnums.push_back(nums[i]);}
+            
             else{
-                negnums.push_back(nums[i]);
-            }
-        }
+                negnums.push_back(nums[i]);}
+                }
         int j=0;
         int k=0;
         for(int i=0; i<nums.size(); i++){
             if(i%2!=0 && k<negnums.size()){
                  nums[i] = negnums[k];
-                 k++;
-            }
+                 k++;}
             if(i%2==0 && j<posnums.size()){
                 nums[i] = posnums[j];
-                j++;
-            }
-        
+                j++;}
         }
     
         return nums;
