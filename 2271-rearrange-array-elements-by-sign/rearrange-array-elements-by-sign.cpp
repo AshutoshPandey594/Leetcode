@@ -21,7 +21,8 @@ public:
                  k++;}
             if(i%2==0 && j<posnums.size()){
                 nums[i] = posnums[j];
-                j++;}
+                j++;
+                }
         }
     
         return nums;
