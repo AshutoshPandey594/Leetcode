@@ -5,11 +5,9 @@ public:
         if(nums.size() == 2&& nums[0]<0){int temp = nums[0];nums[0] = nums[1]; nums[1]= temp; return nums;} 
         vector<int> posnums;
         vector<int> negnums;
-    
         for(int i=0; i<nums.size(); i++){
             if(nums[i]>=0){
                 posnums.push_back(nums[i]);}
-            
             else{
                 negnums.push_back(nums[i]);}
                 }
@@ -21,8 +19,8 @@ public:
                  k++;}
             if(i%2==0 && j<posnums.size()){
                 nums[i] = posnums[j];
-                j++;
-                }
+                j++;}
+                
         }
     
         return nums;
